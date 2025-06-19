@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Lecture Scheduler - Admin Panel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Online Lecture Scheduler - Admin Panel</h1>
+
+    <!-- Instructor Section -->
+    <section>
+        <h2>Instructors</h2>
+        <input type="text" id="instructorName" placeholder="Instructor Name">
+        <button onclick="addInstructor()">Add Instructor</button>
+        <ul id="instructorList"></ul>
+    </section>
+
+    <!-- Course Section -->
+    <section>
+        <h2>Courses</h2>
+        <input type="text" id="courseName" placeholder="Course Name">
+        <select id="courseLevel">
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+        </select>
+        <textarea id="courseDesc" placeholder="Course Description"></textarea>
+        <input type="file" id="courseImage">
+        <button onclick="addCourse()">Add Course</button>
+        <div id="coursePreview"></div>
+    </section>
+
+    <!-- Batch Section -->
+    <section>
+        <h2>Add Batch to Course</h2>
+        <select id="courseSelect"></select>
+        <input type="date" id="batchDate">
+        <button onclick="addBatch()">Add Batch</button>
+        <ul id="batchList"></ul>
+    </section>
+
+    <!-- Assign Lectures Section -->
+    <section>
+        <h2>Assign Lecture</h2>
+        <select id="lectureCourseSelect"></select>
+        <select id="lectureBatchSelect"></select>
+        <select id="instructorSelect"></select>
+        <button onclick="assignLecture()">Assign Lecture</button>
+        <ul id="lectureList"></ul>
+    </section>
+
+    <a href="instructor.html">Go to Instructor Panel</a>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
