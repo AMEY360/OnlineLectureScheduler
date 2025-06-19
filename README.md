@@ -1,2 +1,3 @@
 #OnlineLectureScheduler
-This project requires Xampp server
+this project requires Xampp server
+and Mysql database
